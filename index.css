@@ -1,0 +1,111 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(185, 75%, 39%);
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+}
+.profile-card {
+	width: 300px;
+	height: 360px;
+	background-color: white;
+	position: relative;
+	box-shadow: 0 4px 8px 0 hsl(227, 10%, 46%);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	z-index: 10;
+}
+
+.card-backImage {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-image: url('./images/bg-pattern-card.svg');
+	width: 100%;
+	height: 38%;
+}
+
+.card-avatar {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: -50px;
+}
+.card-avatar img {
+	width: 80px;
+	border-radius: 50%;
+	border: 4px solid white;
+}
+
+#info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	left: 70px;
+	bottom: 95px;
+}
+
+.name {
+	font-size: 25px;
+	margin: 0 0 15px 0;
+}
+
+#address {
+	margin: 0;
+	color: hsl(0, 0%, 60%);
+}
+
+.statistics {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 60px;
+}
+
+.statistics p {
+	align-self: flex-end;
+}
+
+hr {
+	border: none;
+	height: 2px;
+	position: relative;
+	top: 60px;
+	background-color: hsl(0, 0%, 88%);
+}
+
+.log {
+	color: hsl(0, 0%, 60%);
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.age {
+	color: hsl(0, 0%, 40%);
+	font-weight: normal;
+}
+
+#bottom-img {
+	position: absolute;
+	width: 1000px;
+	top: 300px;
+	right: -150px;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+#top-img {
+	position: absolute;
+	width: 1000px;
+	top: -300px;
+	left: -300px;
+	opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue;
+	}
+}
